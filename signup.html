@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create Account — Skill2Job</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Skill2Job</div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="login.html" class="nav-link">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-center">
+    <div class="card login-card">
+      <h2>Create Account</h2>
+
+      <form id="signupForm" onsubmit="event.preventDefault(); signupFrontend();">
+        <input id="signupName" type="text" placeholder="Full name" required />
+
+        <input id="signupEmail" type="email" placeholder="Email" required />
+
+        <input id="signupPassword" type="password" placeholder="Password (min 6 chars)" required minlength="6" />
+
+        <button class="btn primary full" type="submit">Create Account</button>
+
+        <p class="muted">Already have an account? <a href="login.html">Login</a></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer simple">
+    <div class="container footer-inner">
+      <div class="footer-about">
+        <h3>About us</h3>
+        <p>Skill2Job — practice, revise, succeed.</p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <small>© <span id="year3"></span> Skill2Job</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
