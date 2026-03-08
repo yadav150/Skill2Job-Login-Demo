@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="page-bg"></div>
+
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">Skill2Job</div>
@@ -29,7 +31,7 @@
         <input id="loginPassword" type="password" placeholder="Password" required minlength="6" />
 
         <div class="row-between">
-          <div>
+          <div class="remember-wrap">
             <input id="remember" type="checkbox" />
             <label for="remember" class="small"> Remember me</label>
           </div>
@@ -38,7 +40,7 @@
 
         <button class="btn primary full" type="submit">Login</button>
 
-        <!-- Optional Google button; you can hide/remove if you don't want Google sign-in -->
+        <!-- optional google sign-in button (remove if you don't want) -->
         <!-- <button type="button" class="btn google full" onclick="googleLoginFrontend();">Login with Google</button> -->
 
         <p class="muted">Don't have an account? <a href="signup.html">Create account</a></p>
