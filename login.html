@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Skill2Job</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Skill2Job</div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="signup.html" class="nav-link">Create Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-center">
+    <div class="card login-card">
+      <h2>Login</h2>
+
+      <form id="loginForm" onsubmit="event.preventDefault(); loginFrontend();">
+        <label for="loginEmail" class="sr-only">Email</label>
+        <input id="loginEmail" type="email" placeholder="Email" required />
+
+        <label for="loginPassword" class="sr-only">Password</label>
+        <input id="loginPassword" type="password" placeholder="Password" required minlength="6" />
+
+        <div class="row-between">
+          <div>
+            <input id="remember" type="checkbox" />
+            <label for="remember" class="small"> Remember me</label>
+          </div>
+          <button type="button" class="link-btn small" onclick="forgotPasswordFrontend();">Forgot password?</button>
+        </div>
+
+        <button class="btn primary full" type="submit">Login</button>
+
+        <!-- Optional Google button; you can hide/remove if you don't want Google sign-in -->
+        <!-- <button type="button" class="btn google full" onclick="googleLoginFrontend();">Login with Google</button> -->
+
+        <p class="muted">Don't have an account? <a href="signup.html">Create account</a></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer simple">
+    <div class="container footer-inner">
+      <div class="footer-about">
+        <h3>About us</h3>
+        <p>Skill2Job — exam practice for Assam & national tests.</p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <small>© <span id="year2"></span> Skill2Job</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
